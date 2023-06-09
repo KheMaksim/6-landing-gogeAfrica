@@ -1,0 +1,79 @@
+.gallery
+	&__container
+		display: flex
+		justify-content: space-between
+		max-width: 1200px
+		margin: 0 auto 80px
+		padding: 10px
+		position: relative
+		+tablet-landscape
+			flex-direction: column
+			margin: 0 auto 35px
+	&__menu
+	&__navbar
+		+dbetween
+		+width(930px)
+		margin-bottom: 46px
+
+.navbar
+	&__info
+		display: inline-block
+		+font(14px,20px)
+		color: #2f2f2f
+		padding-right: 10px
+	&__navigation
+		+width(720px)
+		+dbetween
+	&__pages
+	&__link
+		+font(14px,20px)
+		color: #2f2f2f
+		padding-right: 10px
+	&__sort
+	&__image
+		&:first-child
+			margin-right: 15px
+	&__burger
+		display: none
+
+.gallery
+	&__content
+		max-width: 930px
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-template-rows: repeat(5, 1fr)
+		grid-column-gap: 10px
+		grid-row-gap: 15px
+		+tablet-landscape
+			grid-template-columns: repeat(2, 1fr)
+			margin-bottom: 10px
+		+mobile-landscape	
+			grid-template-columns: repeat(1, 1fr)
+	&__card
+		border-radius: 10px
+		display: grid
+		position: relative
+		overflow: hidden
+		color: #fff
+.card
+	&__head
+		background: $bgcolor
+		border-radius: 0 10px
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 2
+		padding: 5px 21px 7px 21px
+	&__image
+		border-radius: 10px
+	&__subtitle
+		+dcenter
+		justify-content: flex-start
+		width: 100%
+		min-height: 73px
+		position: absolute
+		top: 207px
+		background: $bgcolor
+		border-radius: 0 0 10px 10px
+		z-index: 2
+		padding: 0 97px 0 30px

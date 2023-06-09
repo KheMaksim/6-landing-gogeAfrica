@@ -1,0 +1,45 @@
+$bgcolor: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+
+=dekstop-landscape
+	@media screen and (max-width: 1330px)
+		@content
+
+=tablet-landscape
+	@media screen and (max-width: 900px)
+		@content
+
+=mobile-landscape
+	@media screen and (max-width: 600px)
+		@content
+
+=width($size)
+	max-width: $size
+	width: 100%
+
+=square($size)
+	width: $size
+	height: $size
+
+=font($size,$lh)
+	font-size: $size
+	line-height: $lh
+	font-weight: 400
+
+=dbetween
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+=dcenter
+	display: flex
+	justify-content: center
+	align-items: center
+
+=column
+	display: flex
+	flex-direction: column
+
+=btnhover
+	&:hover
+		color: #FFFFFF
+		background: $bgcolor

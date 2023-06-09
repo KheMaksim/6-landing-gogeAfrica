@@ -1,0 +1,31 @@
+.pagination
+	&__container
+		display: flex
+		+width(1200px)
+		margin: 0 auto 92px
+		padding: 10px
+	&__item
+		+dcenter
+		width: 60px
+		height: 60px
+		margin-right: 10px
+		text-decoration: none
+		border-radius: 50%
+		text-align: center
+		border: 1px solid #E0E0E0
+		font-size: 14px
+		line-height: 23px
+		text-align: center
+		color: #535353
+		transition: all ease 0.3s
+		+btnhover
+		&.active
+			color: #FFFFFF
+			background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+		&.next
+			width: 100px
+			border-radius: 100px
+		+mobile-landscape
+			width: 39px
+			height: 39px
+			margin-right: 8px

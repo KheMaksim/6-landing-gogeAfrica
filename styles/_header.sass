@@ -1,0 +1,107 @@
+.header
+	min-height: 114px
+	+tablet-landscape
+		min-height: 79px
+		padding: 0 10px
+	&__nav
+		position: relative
+		+width(1350px)
+		+dbetween
+		height: 100%
+		padding: 29px 10px
+		margin: 0 auto
+		+tablet-landscape
+			padding: 18px 10px
+	&__logo
+	&__logo-link
+	&__logo-img
+	&__menu
+		transition: all ease 0.3s
+		+tablet-landscape
+			position: fixed
+			width: 100%
+			left: 0
+			top: -100%
+		+width(930px)
+
+.menu
+	
+	&__button
+		display: none
+	&__list
+		+dbetween
+		+tablet-landscape
+			flex-direction: column
+			background: white
+			padding: 15px 0
+	&__item
+		display: flex
+		flex-direction: row
+		padding: 10px
+		+tablet-landscape
+			display: flex
+			flex-direction: column
+		&:last-child
+			padding: 0
+	&__link
+		+font(15px,18px)
+		background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+	&__link-cart
+		+dcenter
+		margin-right: 24px
+	&__btn-link
+		+font(14px,16px)
+		+dcenter
+		min-width: 160px
+		min-height: 56px
+		border-radius: 100px
+		color: #fff
+		box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2)
+		background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+		margin-right: 10px
+		&:last-child
+			margin-right: 0
+		+tablet-landscape
+			margin-bottom: 10px
+
+.cart
+	display: flex
+	align-items: flex-end
+	min-height: 28px
+	min-width: 33px
+	position: relative
+	&__image
+		width: 19px
+		height: 17px
+	&__number
+		+dcenter
+		+font(7px,1px)
+		min-width: 13.5px
+		min-height: 13.5px
+		border-radius: 13.5px
+		color: #fff
+		background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+		padding: 2px
+		position: absolute
+		top: 0
+		right: 0
+
+.burger
+	display: none
+	cursor: pointer
+	position: absolute
+	right: 0
+	top: 18px
+	z-index: 2
+	+tablet-landscape
+		&:hover
+			+ .header__menu
+				top: 0
+				margin-right: 30px
+		display: block
+	.fa-solid.fa-bars
+		font-size: 27px
+		color: #FF8A00  	
+
